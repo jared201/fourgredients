@@ -1,0 +1,64 @@
+/* CSS declarations go here */
+html, body, #ma_canvas{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map_canvas {
+  max-width:none;
+  position:right;
+}
+
+h2 {
+  font: 400 40px/1.5  Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 { font-family: Lobster; font-weight: 400; font-size: 500%; color: #F8FDFA;}
+
+.color {color:#F8FDFA; font-size: 150%;}
+
+#aboutcolor {color:#748286; font-size: 200%;}
+
+#title { font-family: Lobster; font-weight: 400; font-size: 200%;}
+
+.fill{
+	width:100%;
+	height:50%;
+	background-position:center;
+	background-size:cover;
+}
+
+.bottom {
+	margin-bottom:-10px;
+}
+
+.text1 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    margin-right: 20px;
+    font-size: 160%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+#textbox1, #textbox2, #textbox3, #textbox4 {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    margin-right: 20px;
+    font-size: 160%;
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+#text {
+   position: absolute;
+   width: 100%;
+}
+

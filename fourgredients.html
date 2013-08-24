@@ -1,0 +1,156 @@
+<head>
+  <title>Fourgredients</title>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 30px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+      /* Landscape phone to portrait tablet */
+      @media (max-width: 767px) { 
+	    body {
+	    	padding-top:30px;
+	    } 
+	  }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+       header {
+       	 padding-top:0px;
+       }
+       
+      }
+
+      body {
+        padding-top: 0px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>  
+</head>
+
+<body>
+  
+  {{> navmenu}}
+  {{renderPage}}
+</body>
+
+<template name="home">
+  
+  <header class="fill" style="background-image:url('http://www.momtrends.com/wp-content/uploads/2011/09/Food-News-Banner.jpg');">
+  <p></p>
+  <br>
+  <br>
+  
+  <div class="row-fluid">
+     <div class="full pull-right">
+        <h1>Fourgredients</h1>
+        <br>
+        <p class="color">Any meals, Anytime, Anywhere</p>
+     </div>
+     <br>
+     <br>
+     <div class="container">
+     <img src="https://docs.google.com/drawings/d/10DE6Wgx3wCfFaKb_c0l8_d55z5nsBTmsJxfZIxskUyo/pub?w=720&amp;h=480">
+     </div>
+  </div>
+  </header>
+  <div class="row-fluid">
+    <div class="column span4">
+    </div>
+    <div class="column span4">
+     <input id="textbox1" type="text" class="text1" placeholder="Type an ingredient here"/>
+     <input id="textbox2" type="text" class="text2" placeholder="Type an ingredient here"/>
+     <input id="textbox3" type="text" class="text3" placeholder="Type an ingredient here"/>
+     <input id="textbox4" type="text" class="text4" placeholder="Type an ingredient here"/>    
+     <button class="btn btn-large btn-block btn-primary makeButton mkButton" type="button">
+                Make the Menu!</button>
+    </div>
+    <div class="column span4">
+    </div>
+
+  </div>
+</template>
+
+<template name="navmenu">
+   <div class="navbar navbar-inverse navbar-fixed-top bottom">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="title" class="brand" href="/">Fourgredients</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li id="homeNav"><a href="/">Home</a></li>
+              <li id="aboutNav"><a href="/about">About</a></li>
+              <li id="contactNav"><a href="/contact">Contact</a></li>
+              <li id="locateNav"><a href="/join">Be Our Chef!</a></li>
+              <li id="helpNav"><a href="/help">Help</a></li>
+            </ul>
+                        
+           <ul class="nav pull-right">
+				<li class="divider-vertical"></li>
+				<li class="dropdown" id="menuLogin">
+					<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login</a>
+				<div class="dropdown-menu" style="padding:17px;">
+					<jdoc:include type="modules" name="login" style="xhtml"></jdoc:include>
+				</div>
+				</li>
+		   </ul>
+          </div><!--/.nav-collapse -->
+       </div>
+      </div>
+    </div>
+</template>
+
+<template name="about">
+   <div class="container">
+      <div class="row-fluid">
+        <div class="full">
+           <br>
+           <br>
+           <br>
+           <p><h1 id="aboutcolor">About</h1></p>
+           <br>
+        </div>
+      </div>         
+      </div>
+   </div>
+</template>
+
+<template name="join">
+   <div class="container">
+      <div class="row-fluid">
+         <br>
+         <br>
+         <br>
+         <h1 id="aboutcolor">Be Our Chef!</h1>
+      </div>
+   </div>
+</template>
+
+<template name="offer">
+
+</template>
