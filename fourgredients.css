@@ -123,4 +123,29 @@ h1 { font-family: Lobster; font-weight: 400; font-size: 500%; color: #F8FDFA;}
 	top:1px;
 }
 
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.detail {
+	font-family: Verdana;
+    font-weight: 300; font-size: 50%;
+}
+
+.about {
+	font-family: Verdana;
+    font-weight: 500; font-size: 100%;	
+}
+
 
